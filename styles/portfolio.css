@@ -30,7 +30,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 50px 200px;
+    padding: 50px 200px;
 }
 
 .nav-title {
@@ -202,4 +202,78 @@ textarea {
 .contact a {
     text-decoration: none;
     margin: 14px;
+}
+
+/* RESPONSIVE SECTION */
+
+/* small devices */
+@media screen and (max-width: 576px) {
+    nav,
+    .banner,
+    .skills-container,
+    .resume-content,
+    .about-info-container,
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+
+    .banner {
+        margin: 0 20px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    nav li {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 20px;
+    }
+    .header {
+        background-image: none;
+    }
+
+    .about,
+    .contact {
+        padding: 20px;
+    }
+
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 5px;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .about,
+    .contact {
+        padding: 20px;
+    }
+
+    .banner {
+        margin: 0 20px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+    .contact input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 5px;
+    }
 }
